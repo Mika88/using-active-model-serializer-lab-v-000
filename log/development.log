@@ -2343,3 +2343,5 @@ Processing by ProductsController#show as JSON
 Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/products/23.json" for 47.197.192.160 at 2019-04-18 18:53:13 +0000
+Cannot render console from 47.197.192.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
