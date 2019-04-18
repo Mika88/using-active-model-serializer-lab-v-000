@@ -1,9 +1,7 @@
 class ProductsController < ApplicationController
   def index
     @products = Product.all
-    respond_to do |format|
-      format.html { render :index }
-      format.json { render json: @products }
+    render json: @products
     end
   end
 
@@ -28,9 +26,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find_by_id(params[:id])
-    respond_to do |format|
-      format.html { render :show }
-      format.json { render json: @product }
+    render json: @product }
     end
   end
 
