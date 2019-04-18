@@ -23,7 +23,7 @@ class ProductsController < ApplicationController
   end
 
   def show
-    @product = Product.find(params[:id])
+    @product = Product.find_by_id(params[:id])
     render json: @product
   end
 
