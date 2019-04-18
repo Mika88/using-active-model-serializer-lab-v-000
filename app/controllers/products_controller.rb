@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
     @products = Product.all
     respond_to do |format|
       format.html { render :index }
-      format.json { render json: @product }
+      format.json { render json: @products }
     end
   end
 
